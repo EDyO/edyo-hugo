@@ -1,0 +1,31 @@
+---
+title: "Agenda: Próximos eventos"
+slug: "agenda-proximos-eventos"
+author: "Ignasi Fosch"
+date: 2013-05-10T21:00:00
+
+tags: ["Eventos", "NoSQL", "Python", "Velocity", "WebOps", "Rendimiento", "Escalabilidad"]
+---
+
+Hay algunos eventos interesantes cercanos con fechas cerradas, algunos incluso con los horarios de las charlas ya puestos.
+
+`EuroPython 2013`_
+------------------
+
+EuroPython es un evento organizado alrededor del lenguaje por la `Associazione di Promozione Sociale Python Italia`, en Firenze, anualmente. Este año se celebra del 1 al 7 de Julio y ya tienen el horario_ de las charlas. Hay que tener en cuenta que los cinco primeros días, se dan las charlas programadas, y los dos últimos días, se organizan sprints en proyectos concretos donde cualquiera puede apuntarse para participar.
+
+`Velocity Europe 2013`_
+-----------------------
+
+Velocity es una serie de conferencias, organizadas por O'Reilly, sobre operaciones y rendimiento en entorno web, orientadas a desarrolladores, personal de operaciones, devops, etcétera. Para darle mayor visibilidad y hacerlas más accesibles, a lo largo del año se celebran en diferentes ubicaciones. En Europa se celebra en Londres, este año se celebrará del 13 al 15 de Noviembre, por lo que todavía no tienen cerrado el horario de charlas.
+
+`NoSQL matters BCN 2013`_
+-------------------------
+
+NoSQL matters es un evento que se produce dos veces al año, una, tras el primer trimestre, en Colonia, y otra en Barcelona, durante el último trimestre. En estas conferencias, se habla sobre todo lo relacionado con el mundo del NoSQL, tanto sobre las muchas y variadas soluciones como sobre conceptos y aspectos más filosóficos. Este año, el evento en Barcelona se celebra los días 29 y 30 de Noviembre, pero todavía no hay programa. Hay que decir que este evento se realiza en la `Casa Convalescència`_, un edificio emblemàtico situado cerca del Hospital de Sant Joan.
+
+.. _`EuroPython 2013`: https://ep2013.europython.eu/
+.. _horario: https://ep2013.europython.eu/p3/schedule/ep2013/
+.. _`Velocity Europe 2013`: http://velocityconf.com/velocityeu2013/
+.. _`NoSQL matters BCN 2013`: http://2013.nosql-matters.org/bcn/
+.. _`Casa Convalescència`: http://www.uab-casaconvalescencia.org/en/index.php

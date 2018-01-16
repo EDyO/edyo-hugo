@@ -1,0 +1,29 @@
+---
+title: "Desarrollo guiado por el comportamiento en móviles con Calabash"
+author: "Ignasi Fosch"
+slug: "BDD-moviles-Calabash"
+date: 2013-02-02T13:00:00
+
+tags: ["Eventos", "FOSDEM", "Móviles", "Pruebas", "Cucumber", "Calabash"]
+---
+
+===============================================================
+Desarrollo guiado por el comportamiento en móviles con Calabash
+===============================================================
+
+En esta charla_, Karl Krukow, de LessPainful, estudio dedicado al desarrollo de aplicaciones para iOS y Android, nos cuenta que a menudo se encuentran en la visicitud de probar las aplicaciones en las diferentes plataformas de destino.
+
+<!--more-->
+
+
+En cuanto a la filosofía que ponen en las comprobaciones automatizadas, destacó la importancia que le dan al BDD_ o desarrollo guiado por el comportamiento. Esta técnica, evolución natural del TDD_, permite crear especificaciones legibles, en un lenguaje natural, facilitando la comunicación y la transparencia, que, al mismo tiempo, se pueden ejecutar como pruebas de aceptación automatizadas.
+
+Para poder realizar estas pruebas en un entorno móvil multiplataforma, han creado Calabash_, herramienta que, basándose en Cucumber_, les permite ejecutar en diferentes plataformas, ya sea con dispositivos físicos, emulados o simulados, series de pruebas que validan que sus productos funcionan correctamente y como se espera en todas las plataformas sobre las que trabajan.
+
+Funciona con una arquitectura cliente-servidor, de modo que en el equipo de desarrollo se ejecuta el cliente y en los sistemas móviles correspondientes, el servidor, que puede variar dependiendo del sistema. Calabash, desarrollado por LessPainful, está publicado con licencia pública Eclipse.
+
+.. _charla: https://fosdem.org/2013/schedule/event/mobile_bdd_with_calabash/
+.. _BDD: http://en.wikipedia.org/wiki/Behavior-driven_development
+.. _TDD: http://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas
+.. _Calabash: http://calaba.sh/
+.. _Cucumber: http://cukes.info/

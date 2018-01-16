@@ -1,0 +1,25 @@
+---
+title: "Crónicas de la FOSDEM 2013"
+slug: "cronicas-FOSDEM-2013"
+author: "Ignasi Fosch, Javier Arellano"
+date: 2013-02-02T09:00:00
+
+tags: ["Eventos", "FOSDEM"]
+---
+
+============
+Introducción
+============
+
+Quizás alguno ya conozcáis este evento_, ya que en los últimos años se ha ido convirtiendo en un referente dentro del mundo del software libre, lo que atañe, también, a muchos entornos profesionales relacionados con la tecnología.
+
+<!--more-->
+
+
+Para los que no lo conozcáis, sabed que se trata del mayor encuentro europeo de desarrolladores de software libre y de código abierto, y que lo vienen organizando, desde hace unos 12 o 13 años, por la amplia comunidad de desarrollo belga. Inicialmente, pretendían concentrar todas las comunidades de desarrolladores de software libre y código abierto para compartir técnicas, trucos, y detalles sobre cómo desarrollan sus proyectos, cómo gestionan sus comunidades, y muchos otros aspectos. Pero con el tiempo, el evento se fue convirtiendo más en una feria donde administradores de sistemas, emprendedores, usuarios y, en general, gente con inquietudes podían entrar en contacto con herramientas, proyectos que se estaban desarrollando, técnicas de trabajo y las corrientes más avanzadas de casi todo lo que implica tecnología moderna.
+
+Desde hace unos años, los colaboradores de este blog solemos visitarla, junto con algunos amigos, para disfrutar de las novedades tecnológicas, de los descubrimientos eventuales que podamos hacer y, en definitiva, de la ciudad de Bruselas y su ambiente durante un fin de semana en Febrero.
+
+En los siguientes artículos, uno para cada charla, intentaremos hacer un resumen de las charlas más interesantes que hemos visto, explicándoos lo que hemos visto. No entraremos en mucho detalles, ni tampoco pretendemos juzgar ni la presentación en sí, ni el proyecto, pero sí ofrecer un punto de partida para poder aprender más sobre lo que hemos podido ver.
+
+.. _evento: http://fosdem.org/

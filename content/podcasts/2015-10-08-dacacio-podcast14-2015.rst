@@ -1,0 +1,40 @@
+---
+title: "Podcast 14: Python San Sebastian 2015"
+author: "David Acacacio"
+slug: podcast-episodio-14
+date: 2015-10-08T08:00:00
+image: pyss15_logo.png
+audio: edyo-14.mp3
+aliases:
+  - /posts/podcast-episodio-14.html
+---
+
+En este podcast repasaremos próximos eventos y hablaremos con Alexandre Savio co-organizador de la `EuroPython 2015`_ y `Python San Sebastian 2015`_.
+
+Como siempre podréis encontrar este, y el resto de episodios, en nuestra sección de `podcast`_.
+
+Esperamos que os guste.
+
+<!--more-->
+
+EVENTOS
+========
+
+* `OpenNebulaConf 2015`_: 20-22 de Octubre
+* `DockerCon`_ : 16-17 Noviembre
+* `AWS reInvent 2015`_ : 5-9 de Octubre
+
+MAIN TRACKS
+===========
+
+Hablamos con Alexandre Savio co-orginizador de la `EuroPython 2015`_ y `PySS 2015`_ . Nos explicará curiosidades que tiene la organización de un evento de nivel europeo así como lo que podremos ver en la PySS.
+
+Esperamos que os guste.
+
+.. _`EuroPython 2015`: http://europython.eu
+.. _`Python San Sebastian 2015`: http://pyss15.pyss.org/en/
+.. _`AWS reInvent 2015`: https://reinvent.awsevents.com/
+.. _`PySS 2015`: http://pyss15.pyss.org/en/
+.. _`podcast`: http://feedpress.me/edyo
+.. _`OpenNebulaConf 2015`: http://2015.opennebulaconf.com
+.. _`DockerCon` : http://europe-2015.dockercon.com/

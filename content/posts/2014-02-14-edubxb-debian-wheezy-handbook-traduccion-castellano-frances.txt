@@ -1,0 +1,19 @@
+---
+title: "Disponible la traducción al Castellano y al Francés del “Manual del administrador de Debian”"
+author: "Eduardo Bellido Bellido"
+slug: "traduccion-castellano-frances-manual-administrador-debian"
+date: 2014-02-14T14:30:00
+
+tags: ["Debian", "Linux", "Sistemas Operativos"]
+---
+
+Como ya comentamos en un `artículo anterior`_, el libro `“Manual del administrador de Debian”`_ fue actualizado a la última versión estable de esta distribución, 7.0 o Wheezy, ahora además, este fantástico libro está disponible en Castellano y en Francés. Las traducciones a otros idiomas siguen avanzando.
+
+<!--more-->
+
+
+En el `blog del proyecto`_ hay más información al respecto, así como los enlaces para la compra del libro o para su lectura en línea.
+
+.. _`artículo anterior`: http://www.entredevyops.es/posts/noticias-semanales-enero-2014-21.html
+.. _`“Manual del administrador de Debian”`: http://debian-handbook.info/
+.. _`blog del proyecto`: http://debian-handbook.info/2014/first-translations-french-spanish/

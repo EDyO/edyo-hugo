@@ -1,0 +1,130 @@
+---
+title: "Testing y automatización  en el Fosdem"
+slug: "testing-automatizacion-Fosdem"
+date: 2013-02-17T19:00:00
+
+tags: ["FOSDEM", "Open Source"]
+author: "Javier Arellano"
+---
+
+El primer día de la FOSDEM hubo una devroom con charlas de testing y automatización. De esta sala asistimos a las siguientes charlas de las que podemos hacer un resumenO
+
+<!--more-->
+
+
+- Metaphor and BDD
+- Automating OpenStack Testing on Ubuntu
+- BDD for Mobile using Calabash
+- How MediaWiki is tested
+- Scale your Jenkins build pipeline automatically to minimize test time
+- A Continuous Packaging Pipeline
+- DevOps with Jenkins
+- What's Our Status -  Visualizing the state of complex build systems and pipeline
+
+
+Metaphor and BDD
+----------------
+
+En una mirada filosófica a los casos de uso para poder otorgar un enfoque distinto al TDD. Es decir, la primera charla de la FOSDEM, pero no la mejor, ya que, entre que no era un concepto fácil, entre las neblinas del despertar y que las fotografías realizadas para la presentación dejaban muchos reflejos en la pantalla , me fue imposible entender si era una buena idea o simplemente era un nombre nuevo a un concepto antiguo como sería el llamar a las clases según su utilidad en los casos de uso para facilitar su testeo a través de TDD.
+
+Automating OpenStack Testing on Ubuntu
+--------------------------------------
+
+Realmente una muy buena charla en la que utilizando uno de los componentes mas importantes de la integración continua, Jenkins, como núcleo central , pudimos ver como se integraba con Juju y MAAS para obtener un conjunto de máquinas donde la abstracción del HW físico hacía que pudieras tener un cloud privado  con pocas máquinas.
+
+
+BDD for Mobile using Calabash
+-----------------------------
+
+Fantástico producto que extiende cucumber_  a los dispositivos móviles. Actuando como cliente y servidor puede ejecutar todo tipo de pruebas en dispositivos móviles de forma que con un código y un test puedes probar distintos móviles Android e iOS.
+
+Un momento curioso de la presentación fue cuando puso un vídeo con una pared llena de móviles que a través de un dispositivo Arduino controlaba diversos motores que hacían girar los móviles para hacer las pruebas  de movimiento en los dispositivos a la vez. 
+
+Otra curiosidad fue que este producto extendía el Xcode para poder compilar el código y utilizar el simulador sin necesidad de utilizar el editor de Xcode, ya que como editor principal utilizaba un programa para Mac que se llama Rubymine_ y que no fue ni la primera vez ni la última que lo viese durante la FOSDEM.
+
+
+How MediaWiki is tested
+-----------------------
+
+Mediawiki es una de las páginas más visitadas y utilizadas en el mundo y realmente saber de los mejores es una buena forma de aprender. Según ellos mismos comentaron, utilizan: 
+
+Principalmente `page object <http://code.google.com/p/selenium/wiki/PageObjects>`_ y un montón de utilidades: Git_, Ruby_, RVM_, RubyGems_, Cucumber_, `Selenium WebDriver <http://seleniumhq.org/>`_, Watir_, Bundler_, `page-object gem <https://github.com/cheezy/page-object>`_, RubyMine_, Jenkins_, CloudBees_, `Sauce Labs <https://saucelabs.com/>`_ y alguna más. 
+
+En su afán de dar a conocer como funciona por dentro la wikipedia se puede acceder a sus test en esta `dirección <https://github.com/wikimedia/qa-browsertests>`_.
+
+Scale your Jenkins build pipeline automatically to minimize test time
+---------------------------------------------------------------------
+
+La utilización de varios servidores para testear en paralelo es un cosa que nunca se me había ocurrido ya que en los proyectos que lo he necesitado no ha sido nunca necesario realizar a tal velocidad los testeos. 
+
+En cambio en esta presentación, utilizando selenium 2 y el plugin swarm de Jenkins_ como testeadores y la orquestación de ec-collective y puppet, desmostró que se puede levantar unas máquinas en EC2 de amazon y realizar el testeo de la plataforma. Aunque teniendo en cuenta que cuando pasaban de 4 a 8 máquinas, el tiempo se reducía exponencialmente; pero en el caso de pasar de 8 a 16 el tiempo no tenía la reducción esperada por lo que, si no recuerdo mal, al final, realizaban las pruebas principalmente con 12 máquinas pequeñas, a no ser que el precio a pagar por el sobrecoste valiese la pena en comparación con el servicio recibido. 
+
+Todo perfectamente explicado, pero sin tantos ejemplos en: 
+http://tradeshift.com/blog/just-add-servers/
+
+A Continuous Packaging Pipeline
+-------------------------------
+
+Múltiples herramientas a través de las cuales conseguimos pasar automáticamente de un código fuente a un paquete terminado y listo para distribuir:
+
+A través de la cadena:
+
+git_ -> vendorificator_ -> Jenkins_ -> metarake_ -> evoker_ -> FPM_ -> freight_ -> apt-get
+
+Una de las partes más interesantes de esta charla fue la explicación del por qué todas las librerías que utilizas han de formar parte de tu código, ya que en caso de cambio en las librerías utilizadas y no conservar el código antiguo es una fuente de problemas.
+
+- vendorificator_
+
+Mantiene dentro del código las librerías externas
+
+- metarake_
+
+Es un rake_ con esteroides, que permite "programar" rake_
+
+- evoker_
+
+permite una descarga inteligente desde terceros componentes.
+
+- FPM_
+
+Es un administrador de paquetes de forma que se puede convertir paquetes de un formato a otro
+
+- freight_ 
+
+Simula ser un servidor .deb para poder hacer pruebas de instalaciones 
+
+Más información en esta `página <https://gist.github.com/3831086>`_
+
+
+DevOps with Jenkins
+-------------------
+
+Una pequeña introducción al uso de los plugins de Jenkins_ para poder utilizarlos en devops aunque mi impresión era que intentaba vender los libros que ha escrito sobre Agile ALM. 
+
+
+What's Our Status -  Visualizing the state of complex build systems and pipeline
+--------------------------------------------------------------------------------------
+
+Diversas formas de visualización para ver si hay algún problema en la generación del código. Fue una charla muy filosófica que realmente es muy interesante y plantea una muy buena pregunta. Es necesario tener de una forma visual la información si un proceso ha funcionado o no, pero claro siempre teniendo claro la importancia del proceso. El problema es que no llegó a ninguna conclusión. Así que será necesario seguir investigando. 
+
+
+.. _Git: http://git-scm.com/
+.. _Ruby: http://www.ruby-lang.org/en/
+.. _RVM: https://rvm.io/
+.. _RubyGems: https://rubygems.org/
+.. _Cucumber:  http://cukes.info/
+.. _Watir: http://watir.com/
+.. _Bundler: http://gembundler.com/
+.. _RubyMine: http://www.jetbrains.com/ruby/
+.. _Jenkins: http://jenkins-ci.org/
+.. _CloudBees: http://www.cloudbees.com/
+.. _rake : https://github.com/jimweinrich/rake/
+.. _vendorificator : https://github.com/3ofcoins/vendorificator/
+.. _Metarake : https://github.com/3ofcoins/metarake/
+.. _evoker : https://github.com/3ofcoins/evoker/
+.. _FPM : https://github.com/jordansissel/fpm/
+.. _freight: https://github.com/rcrowley/freight/
+
+
+
+

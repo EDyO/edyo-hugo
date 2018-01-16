@@ -1,0 +1,35 @@
+---
+title: "Versión 0.1 de kitchen-builder publicada"
+author: "Ignasi Fosch"
+slug: "version-0.1-kitchen-builder-publicada"
+date: 2013-05-15T12:00:00
+
+tags: ["Herramientas", "Chef", "TDD", "Cucumber-Chef", "Cucumber", "RVM", "kitchen-builder"]
+---
+
+Hoy se ha publicado la versión 0.1 de kitchen-builder_.
+
+<!--more-->
+
+
+Chef, TDD y Kitchen-builder
+---------------------------
+
+Al empezar a trabajar con un sistema de gestión de la configuración, como Chef_, en el que la infrastructura, prácticamente, se programa, es fácil enfrentarse a ciertos problemas. Para superarlos, aplicar soluciones ya conocidas suele ser un buen planteamiento. Por ejemplo, para poder comprobar el funcionamiento de las recetas, lo primero que se puede plantear es aplicar técnicas como el TDD_ o el BDD_, muy utilizadas en el mundo del desarrollo.
+
+Siendo la necesidad, y la solución, muy habituales y muy comentadas, ya hace algún tiempo que van apareciendo herramientas y charlas al respecto. Una de éstas herramientas es Cucumber-Chef_, que consiste en una serie de herramientas, basadas en Cucumber_, utilidad de BDD_ ampliamente utilizada.
+
+Al empezar a utilizar Cucumber-Chef_, es probable que se empiecen a encontrar bastantes problemas, especialmente en su version 2.0.7, la que se instala siguiendo sus instrucciones.
+
+Además, todas éstas herramientas están desarrolladas con Ruby y se distribuyen, como todas las librerías de las que dependen, como gemas. Al hacer la instalación como se indica, lo más probable es que se instalen versiones incompatibles o demasiado actualizadas.
+
+Es por esto que se empezó a desarrollar kitchen-builder_, una ayuda para disponer de un entorno homogéneo, funcional y estable, para Linux y MacOS que incluye la instalación de Chef_, Cucumber_, Cucumber-Chef_, corrigiendo los errores que incorpora en la versión 2.0.7, Foodcritic_, y además, todo esto dentro de un entorno cerrado, gracias a RVM_, de modo que no afectará a las gemas previamente instaladas en el sistema.
+
+.. _Chef: http://www.opscode.com/chef/
+.. _TDD: http://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas
+.. _BDD: http://en.wikipedia.org/wiki/Behavior-driven_development
+.. _Cucumber-Chef: http://www.cucumber-chef.org/
+.. _Cucumber: http://cukes.info/
+.. _kitchen-builder: https://github.com/ifosch/kitchen-builder
+.. _Foodcritic: http://acrmp.github.io/foodcritic/
+.. _RVM: https://rvm.io/

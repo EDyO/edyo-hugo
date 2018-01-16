@@ -1,0 +1,39 @@
+---
+title: "Automatización de las pruebas de OpenStack"
+author: "Ignasi Fosch"
+slug: "automatizacion-pruebas-openstack"
+date: 2013-02-02T11:50:00
+
+tags: ["Eventos", "FOSDEM", "Automatización", "Pruebas", "OpenStack"]
+---
+
+==========================================
+Automatización de las pruebas de OpenStack
+==========================================
+
+En esta charla_, James Page, miembro del equipo de Ubuntu Server de OpenStack, explicó cómo realizan el testeo de cada release de OpenStack.
+
+<!--more-->
+
+
+Según explicó, en su proceso de desarrollo utilizan, principalmente, las siguientes herramientas:
+
+* DevStack_: Consiste en un guión que despliega OpenStack sobre una Ubuntu 12.04 o una Fedora 16.
+* Github_: Github es un servicio de hospedaje para proyectos.
+* Gerrit_: Es un sistema web que permite revisar el código para identificar posibles errors, o *code reviews*.
+* SmokeStack_: Es una herramienta para gestionar, controlar y automatizar pruebas de humo.
+* Jenkins_: Es un gestor de tareas que se utiliza para implementar la integración contínua.
+* Juju_: Es un sistema de gestión de configuraciones que permite desplegar sistemas e infrastructuras en la nube.
+* MaaS o Metal as a Service: Es un sistema de provisionamiento de hardware que permite crecer dinámicamente con mayor facilidad.
+
+Disponen de un sistema compuesto por múltiples nodos, con un único nodo de control, que gestiona el despliegue de la aplicación y la ejecución de las pruebas en el resto de nodos.
+
+A modo de conclusión, con todo esto consiguen un despliegue en hardware repetible, muy eficaz para detectar fallos de integración entre los distintos proyectos.
+
+.. _charla: https://fosdem.org/2013/schedule/event/automating_openstack_testing/
+.. _DevStack: http://devstack.org
+.. _Github: http://github.com
+.. _Gerrit: http://code.google.com/p/gerrit/
+.. _SmokeStack: http://smokestack.openstack.org
+.. _Jenkins: http://jenkins-ci.org
+.. _Juju: http://juju.ubuntu.com

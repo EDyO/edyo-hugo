@@ -1,0 +1,200 @@
+---
+title: "Reunión de Mayo de Sudoers BCN"
+author: "Ignasi Fosch"
+slug: "reunion-de-mayo-de-sudoers-bcn"
+date: 2013-05-08T20:37:37
+
+tags: ["Eventos", "Sudoers BCN", "Alta disponibilidad", "Balanceo de carga", "Keepalived", "IP Virtual Server", "Cassandra", "Open Source"]
+---
+
+Sudoers BCN
+-----------
+
+`Sudoers BCN`_ es una reunión, de carácter mensual, organizada, preparada y orientada a administradores de sistemas, pero en el que se habla de muchos temas relacionados con las tecnologías de la Información. Esta reunión se realiza el primer martes de cada mes y suele ubicarse en la FIB, en el Campus Nord de la UPC. En esta ocasión, Roger Torrentsgenerós habló sobre IPVS y Keepalived, mientras que Tomàs Núñez dió una charla sobre Cassandra para sysadmins.
+
+<!--more-->
+
+
+`HA y LB con Keepalived`_
+-------------------------
+
+`Roger Torrentsgenerós`_ habló sobre los beneficios de unir las funcionalidades del protocolo VRRP_, utilizando Keepalived_, y el software IPVS_. 
+
+VRRP
+````
+
+El protocolo VRRP se utiliza para mantener una IP, denominada IP virtual, o VIP, siempre activa entre dos o más servidores. Esta VIP es sobre la que se da un servicio que queremos que sea altamente disponible. Todos los nodos que participan del cluster HA se comunican por multicast_ en la dirección 224.0.0.18, reconociendo a los demás participantes de la VIP por su identificador de router virtual (VRID).
+
+De su experiencia, Roger indicó que hay que ir con cuidado con los siguientes detalles:
+
+- Procurar recordar que no provee balanceo de carga (LB).
+- Procurar evitar utilizar el mismo VRID para dos grupos distintos.
+- En caso de igualar el último byte de la VIP al VRID utilizado, asegurarse de utilizar un sólo segmento de 24 bits.
+- Procurar que los servidores ejecuten la misma versión de VRRP.
+
+IP Virtual Server
+`````````````````
+
+Este software consiste en un módulo de netfilter que proporciona balanceo de carga a nivel de transporte. Funciona en espacio de núcleo, se gestiona con el comando ``ipvsadm``.
+
+Un conjunto de servidores conforman un *cluster*, en el que uno de ellos es el servidor principal, prestando el servicio a través de éste. En cierto modo, es como si éste servidor se comportase como un *proxy*, redirigiendo el tráfico a los otros servidores según el nivel de carga.
+
+Del mismo modo que con el VRRP, Roger explicó las consideraciones que ha tenido que aprender a tener presentes:
+
+- Tener muy presente que IPVS no provee de alta disponibilidad (HA).
+- En caso de activar la persistencia (afinidad) con los clientes, en cantidades bajas y impares, el balanceo suele ser ineficiente, por lo que es mejor no activarla salvo en casos justificados (control de sesiones, por ejemplo).
+- Tener claro que el servidor "principal" tendrá bastante más carga que los demás, por el trabajo de reenviar las peticiones. Esto se exagera en casos en los que se ha elegido mal el algoritmo.
+- Procurar evitar configuraciones de firewall que puedan crear bucles, que acabarían por reducir la eficiencia del balanceo.
+
+Keepalived: VRRP para IPVS
+``````````````````````````
+
+Finalmente, Roger explicó cómo es posible combinar el VRRP, protocolo implementado en Keepalived_, con el IPVS, sacando provecho de algunas técnicas. Keepalived_ permite:
+
+- Uso de scripts para notificación de cambios de estado. En su caso, a parte de para notificar, los utilizan para alterar el entorno de ejecución, como cambiar las reglas del firewall.
+- Comprobaciones de estado (health checks) en forma de scripts que pueden, como en el caso anterior, ser bastante útiles.
+- Las funciones de quorum, que permiten especificar cuál es el nivel necesario de quorum para establecer el servicio.
+
+A modo de errores típicos, indicó que hay que tener mucho cuidado con las confusiones entre la capa de HA y la de LB. Es necesario tener siempre muy presente que entregar la VIP (HA) no implica dejar de ser el servidor principal del LB, ni que convertirse en el servidor principal del balanceo implica tener la VIP asignada.
+
+Roger contó cómo han acabado implementando, mediante los health checks de Keepalived_ y de IPVS_, un método para poder dejar un servidor fuera del cluster de balanceo y de HA sin parar los servicios, utilizando una comprobación de la presencia de un fichero en particular. Cuando quieren que el servidor esté fuera de servicio, pero seguir pudiendo probar que funciona todo bien, eliminan el fichero y dejan que los health checks hagan su trabajo.
+
+Finalmente, enumeró los principales defectos que ve en Keepalived_:
+
+- El logging, enviado a /var/log/messages, es bastante complejo.
+- No integra la gestión de las reglas del cortafuegos.
+
+`Cassandra para sysadmins`_
+---------------------------
+
+`Tomàs Núñez`_ nos habló de Cassandra_, el motor de clave-valor de Apache_, pero desde el punto de vista de un administrador de sistemas. Las principales razones para utilizar Cassandra son:
+
+- La velocidad (3000x en escrituras y 20x en lecturas comparándolo con MySQL),
+- HA "de serie",
+- sin SPOF,
+- escalado lineal con la adición de nodos,
+- una administración muy sencilla y,
+- su orientación hacia hardware común.
+
+El cambio de paradigma en el modelo, sobretodo para aquellos acostumbrados al modelo relacional, y la falta de algunas herramientas de depuración, son cambios que hay que aceptar si se quiere sacar provecho de sus ventajas.
+
+Modelo
+``````
+
+Respecto al cambio de modelo, Tomàs establece las siguientes equivalencias:
+
+===================== ==================
+      Cassandra           Relacional
+===================== ==================
+ Keyspace              BBDD
+ ColumnFamily          Tabla
+ SSTables              Fichero de datos
+ ID+clave+valor+hora   Registro
+===================== ==================
+
+Aunque también señaló que se trata de un modelo disperso en el que no todos los elementos deben tener los mismos atributos, por lo que permite variar el número de atributos sin bloquear ninguna tabla ni parar ningún servicio.
+
+Arquitectura
+````````````
+
+Utilizando una arquitectura igual a igual, tal y como explicó Tomàs, Cassandra consiste en una tabla de *hash* distribuida, que provee de disponibilidad y tolerancia a fallos con un cierto grado de consistencia incrementando la latencia. Dispone de un parámetro que indica el número de veces que se quiere repetir la información (Replication Factor). El sistema de partición y distribución de claves permite valores de 0 a 2 :sup:`127`.
+
+Existen cuatro modos de consistencia:
+
+- *One* y *Any*: En los que basta con un sólo nodo activo
+- *Quorum*: En el que es necesario un número configurable de nodos funcionando.
+- *All*: en el que es necesario que ningún nodo esté inactivo.
+
+Existe un proceso de monitorización, en instalaciones con múltiples nodos, llamado ``gossip`` que permite a cada nodo conocer el estado de los otros nodos, su carga, si se están realizando tareas administrativas, etc.
+
+Operaciones E/S
+```````````````
+
+Escritura
+~~~~~~~~~
+
+Se puede escribir en cualquier nodo, incluso aunque no coincida con el que tiene que almacenar el dato. El nodo que recibe la información la transmite a los nodos que, por la distribución de claves, les corresponde almacenarlo. Éstos nodos lo almacenan en memoria, permitiendo escrituras muy rápidas. Luego, cada cierto tiempo, un proceso escribe los datos a disco.
+La escritura en disco no sobreescribe nada, va acumulando las escrituras, evitando búsquedas y movimientos; aunque un proceso separado va haciendo tareas de mantenimiento en la *SSTable*.
+
+Lectura
+~~~~~~~
+
+Como las escrituras, se pueden hacer en cualquier nodo. Dependiendo del modo de consistencia, se lo pedirá a un solo nodo, a unos cuantos o a todos, devolviendo el valor más reciente y actualizando los nodos que no estén bien actualizados.
+
+Eliminación
+~~~~~~~~~~~
+
+El nodo que contiene los datos, recibe la eliminación y marca el dato con una "lápida" y la distribuye. Periódicamente, un proceso borra todos los datos con lápida y hora suficientemente antiguas.
+
+Para sysadmins
+``````````````
+
+Tomàs explicó que la instalación es muy sencilla, dado que se trata de un programa en Java que requiere la JVM de Sun, al que sólo hay unos pocos parámetros que configurarle:
+
+- La dirección de servicio (``rpc address``)
+- El directorio donde ubicar las *SSTable* (``data file directories``)
+- El directorio donde almacenar el registro (``commit log directory``)
+- El directorio donde guardar las caches (``saved caches directory``)
+
+Además, si se está configurando en un *cluster*, hay los siguientes parámetros:
+
+- El nombre del *cluster* (``cluster name``)
+- El valor del *token* inicial (``initial token``)
+- La dirección de escucha del proceso de sincronización (``listen address``)
+- Las semillas para las claves (``seeds``)
+
+Cassandra_, tal y como contó Tomàs, dispone de un cliente y permite la utilización de una especie de variante de SQL, llamada CQL. Las búsquedas sobre información no presente en la clave se realizan sobre índices secundarios, que se materializan como una *SSTable* más, pero se garantizan escrituras atómicas con la *SSTable* que contiene la información. Existe una utilidad básica de administració del cluster que se llama ``nodetool``.
+
+Para aumentar la capacidad
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Hay varias formas de aumentar la capacidad, tal y como contó Tomàs:
+
+- Se pueden añadir más discos, o más nodos.
+- Mover elementos existentes, utilizando el comando ``notetool move``.
+- Si hay duplicados, se puede recolocar convenientemente.
+- Redistribuir los datos, con el comando ``nodetool rebuild``.
+- En el resto de nodos, se puede eliminar la información redundante, utiliando ``nodetool clean`` o ``nodetool stub``.
+
+Para realizar copias de seguridad
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A nivel de servidor, se pueden hacer instantáneas (*snapshots*). Además, utilizando enlaces duros (*hard links*) se pueden conseguir copias de seguridad completas sin consumo de disco adicional.
+
+A nivel de cluster, será necesario espacio para copiar todos los nodos (espacio de disco * factor de replicación). Una opción es tener un cluster con un solo nodo.
+
+Para reducir la entropía
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+En el caso que un nodo se encuentre fuera de línea, al recuperarse, es necesario verificar toda la información de éste comparándola con el resto de nodos, utilizando el comando ``nodetool repair``.
+
+Para monitorizarlo
+~~~~~~~~~~~~~~~~~~
+
+A parte de las técnicas habituales de monitorización, el comando ``nodetool`` tiene opciones de generación de estadísticas de consumo de red, de estado de los nodos y demás. Al ser una aplicación Java, JMX es una buena opción. Con JMX se puede monitorizar el *Garbage collector*, la memoria (*heap* y no *heap*), la latencia, las tareas de compactación y las operaciones por estado (``ReadStage``, ``MutationStage``, ``GossipStage``).
+
+Errores típicos
+~~~~~~~~~~~~~~~
+
+Tomàs destacó algunos aspectos muy importantes para el correcto funcionamiento de Cassandra:
+
+- Es importante utilizar el JNA (*Java Natice Access*) para mejorar la E/S.
+- Aunque sea contraintuitivo, es importante no activar RAID 1, 10 ni 5, ni esperar que el uso de una SAN aporte mejora alguna. Utilizar RAID 0, por el contrario, sí que mejorará el funcionamiento.
+- Es importante utilizar distintos discos para el registro y los ficheros de datos.
+- En muchas ocasiones, pensar en aumentar el *Heap* de la JVM podría parecer una buena idea, sin embargo, hay pruebas de que poner más de 8GB no es buena idea, ya que podria retrasar demasiado el *garbage collection*.
+- Conviene aumentar el límite de ficheros del sistema (1024).
+- No es necesario poner un balanceador de carga.
+- Los volúmenes EBS de Amazon WS no son fiables, en cuanto a rendimiento para ejecutar Cassandra.
+
+.. _`Sudoers BCN`: http://sudoers-barcelona.wikia.com/wiki/Sudoers_Barcelona_Wiki
+.. _`HA y LB con Keepalived`: https://www.dropbox.com/s/f21q3gkl5a99vmn/keepalived.pdf
+.. _`Roger Torrentsgenerós`: https://twitter.com/trutx
+.. _VRRP: http://es.wikipedia.org/wiki/Virtual_Router_Redundancy_Protocol
+.. _Keepalived: http://www.keepalived.org/
+.. _IPVS: http://www.linuxvirtualserver.org/software/ipvs.html
+.. _multicast: http://es.wikipedia.org/wiki/IP_Multicast
+.. _`Cassandra para sysadmins`: http://www.tomas.cat/blog/ca/presentaci%C3%B3-de-cassandra-al-sudoersbcn-diapositives
+.. _`Tomàs Núñez`: https://twitter.com/TomasTechNews
+.. _Cassandra: http://cassandra.apache.org/
+.. _Apache: http://www.apache.org/
+

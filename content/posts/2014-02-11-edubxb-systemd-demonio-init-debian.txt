@@ -1,0 +1,24 @@
+---
+title: "Systemd será el nuevo demonio init por defecto en Debian"
+author: "Eduardo Bellido Bellido"
+slug: "systemd-nuevo-demonio-init-debian"
+date: 2014-02-11T23:35:00
+
+tags: ["Debian", "Linux", "Sistemas Operativos"]
+---
+
+Finalmente, y después de varias rondas de votaciones y mucho deliberar, el `Comité técnico de Debian`_ ha decidido que `systemd`_ será el nuevo `demonio init`_ por defecto para sus nuevas versiones.
+
+<!--more-->
+
+
+Como alternativas estaban el actual sistema originario de la versión de `UNIX System V`_, y `upstart`_, desarrollado por Canonical para su distribución Ubuntu, siendo este último el principal contrincante en la elección.
+
+En `este mensaje`_ en la lista de correo del comité podréis ver la resolución del actual presidente, Bdale Garbee.
+
+.. _`Comité técnico de Debian`: http://www.debian.org/devel/tech-ctte
+.. _`demonio init`: https://es.wikipedia.org/wiki/Init
+.. _`systemd`: http://www.freedesktop.org/wiki/Software/systemd/
+.. _`UNIX System V`: https://es.wikipedia.org/wiki/System_V
+.. _`upstart`: http://upstart.ubuntu.com/
+.. _`este mensaje`: https://lists.debian.org/debian-ctte/2014/02/msg00405.html
