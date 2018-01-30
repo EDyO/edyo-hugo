@@ -86,7 +86,7 @@ menu:
       Pre: "<i class='fa fa-apple'></i>"
       Weight: 30
     - Name: "Web RSS"
-      URL: "/index.xml"
+      URL: "/rss.xml"
       Identifier: "feed-rss"
       Pre: "<i class='fa fa-rss'></i>"
       Weight: 40
