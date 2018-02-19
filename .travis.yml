@@ -3,6 +3,7 @@ sudo: false
 branches:
     only:
         - edition
+        - master
 
 go:
     - 1.9
