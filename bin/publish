@@ -1,0 +1,14 @@
+if [ "$(whoami)" == "travis" -a "${TRAVIS_PULL_REQUEST}" == false ]; then
+  log=$(git log | head -5 | tail -1 | tr -s ' ')
+  git config --global user.email "autores.edyo+travis@y10k.ws"
+  git config --global user.name "Travis for EDyO"
+  git clone https://${GH_TOKEN}@github.com/EDyO/edyo.github.io
+  cd edyo.github.io
+  cp -R ../public/* .
+  git add .
+  git git commit -m "Publishing ${log}"
+  git push
+else
+  echo "This script is to be run through CI"
+  exit 1
+fi

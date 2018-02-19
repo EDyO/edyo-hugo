@@ -1,0 +1,20 @@
+language: go
+sudo: false
+branches:
+    only:
+        - edition
+
+go:
+    - 1.9
+
+install:
+    - go get github.com/magefile/mage
+    - go get -d github.com/gohugoio/hugo
+    - cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
+    - mage vendor
+    - mage install
+    - bin/setup_theme
+
+script:
+    - bin/compile
+    - bin/publish
