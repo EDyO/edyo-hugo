@@ -10,12 +10,9 @@ go:
 
 install:
     - sudo apt-get install docutils-common
-    - go get github.com/magefile/mage
-    - go get -d github.com/gohugoio/hugo
-    - cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
-    - mage vendor
-    - mage install
-    - cd -
+    - wget -O hugo.tgz https://github.com/gohugoio/hugo/releases/download/v0.36.1/hugo_0.36.1_Linux-64bit.tar.gz
+    - tar xzf hugo.tgz
+    - PATH=.:$PATH
     - bin/setup_theme
 
 script:
