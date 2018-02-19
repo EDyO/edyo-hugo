@@ -9,11 +9,13 @@ go:
     - 1.9
 
 install:
+    - sudo apt-get install docutils-common
     - go get github.com/magefile/mage
     - go get -d github.com/gohugoio/hugo
     - cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
     - mage vendor
     - mage install
+    - cd -
     - bin/setup_theme
 
 script:

@@ -6,7 +6,7 @@ if [ "$(whoami)" == "travis" -a "${TRAVIS_PULL_REQUEST}" == false ]; then
   cd edyo.github.io
   cp -R ../public/* .
   git add .
-  git git commit -m "Publishing ${log}"
+  git commit -m "Publishing ${log}"
   git push
 else
   echo "This script is to be run through CI"
