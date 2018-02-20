@@ -1,18 +1,11 @@
 language: go
-sudo: false
-branches:
-    only:
-        - edition
-        - master
+sudo: required
 
 go:
     - 1.9
 
 install:
-    - sudo apt-get install docutils-common
-    - wget -O hugo.tgz https://github.com/gohugoio/hugo/releases/download/v0.36.1/hugo_0.36.1_Linux-64bit.tar.gz
-    - tar xzf hugo.tgz
-    - PATH=.:$PATH
+    - bin/install
     - bin/setup_theme
 
 script:

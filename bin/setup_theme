@@ -1,4 +1,2 @@
-#!/bin/bash
-
 mkdir -p themes
 git clone https://github.com/EDyO/hugo-theme-edyo themes/edyo
