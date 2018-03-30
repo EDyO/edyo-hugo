@@ -1,5 +1,5 @@
 ---
-title: "Entre Dev Y Ops"
+title: "Entre Dev y Ops"
 baseURL: "http://www.entredevyops.es/"
 
 languageCode: "es-es"
@@ -47,7 +47,7 @@ params:
   googleAnalyticsUserID: "UA-25613214-1"
 
   disqus: "edyo"
-  twitter: "EntreDevYOps"
+  twitter: "entredevyops"
   LinkedIn: "EntreDevYOps"
   github: "edyo"
 

@@ -1,2 +1,2 @@
 rm -rf public
-./hugo
+./hugo -F
