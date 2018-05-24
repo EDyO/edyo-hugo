@@ -1,6 +1,6 @@
 ---
 title: "Entre Dev y Ops"
-baseURL: "http://www.entredevyops.es/"
+baseURL: "https://www.entredevyops.es/"
 
 languageCode: "es-es"
 defaultContentLanguage: "es"
@@ -76,7 +76,7 @@ menu:
 
   subscription:
     - Name: "Podcast RSS"
-      URL: "http://feedpress.me/edyo"
+      URL: "https://feedpress.me/edyo"
       Identifier: "feed-rss-podcasts"
       Weight: 10
     - Name: "Podcast en iVoox"
