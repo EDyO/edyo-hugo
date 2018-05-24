@@ -37,7 +37,7 @@ params:
   logo: "/images/edyo-logo.png"
   icon: "/images/edyo-icon.png"
 
-  license: "<a target=\"_blank\" href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_ES\"><i class=\"fa fa-creative-commons\"></i> BY-NC-SA 3.0</a>"
+  license: "<a target=\"_blank\" href=\"http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_ES\"><i class=\"fab fa-creative-commons\"></i> BY-NC-SA 3.0</a>"
 
   cookiesNoticePage: "politica-cookies.html"
   cookiesNoticeMessage: "Esta web utiliza cookies de terceros para mejorar la experiencia de la web y recopilar datos de uso. Si continúas navegando, consideramos que aceptas su uso."
@@ -50,6 +50,7 @@ params:
   twitter: "entredevyops"
   LinkedIn: "EntreDevYOps"
   github: "edyo"
+  telegram: "entredevyops"
 
   podcast:
     audioBaseUrl: "http://podcast.edyo.es/podcast/"
@@ -73,20 +74,16 @@ menu:
     - Name: "Podcast RSS"
       URL: "http://feedpress.me/edyo"
       Identifier: "feed-rss-podcasts"
-      Pre: "<i class='fa fa-rss'></i>"
       Weight: 10
     - Name: "Podcast en iVoox"
       URL: "https://www.ivoox.com/podcast-entre-dev-y-ops-podcast_sq_f1112910_1.html"
       Identifier: "ivoox"
-      Pre: "<i class='fa fa-podcast'></i>"
       Weight: 20
     - Name: "Podcast en iTunes"
       URL: "https://itunes.apple.com/es/podcast/entredevyops-podcast/id866788492"
       Identifier: "itunes"
-      Pre: "<i class='fa fa-apple'></i>"
       Weight: 30
     - Name: "Web RSS"
       URL: "/rss.xml"
       Identifier: "feed-rss"
-      Pre: "<i class='fa fa-rss'></i>"
       Weight: 40
