@@ -68,6 +68,10 @@ menu:
       URL: "/equipo.html"
       Identifier: "team"
       Weight: 30
+    - Name: "Código de conducta"
+      URL: "/codigo-conducta.html"
+      Identifier: "coc"
+      Weight: 50
 
   subscription:
     - Name: "Podcast RSS"
