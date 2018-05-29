@@ -3,7 +3,7 @@ title: "Colaboración 1: Open Source Leadership Summit por José Miguel Parrella
 author: "Eduardo Bellido Bellido"
 slug: podcast-colaboracion-1
 date: 2018-03-30T18:15:00
-image: Open_Source_Leadership_Summit_2018.png
+image: Open_Source_Leadership_Summit_2018.jpg
 audio: edyo-colaboracion-1.mp3
 ---
 

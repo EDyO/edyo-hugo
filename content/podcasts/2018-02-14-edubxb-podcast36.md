@@ -3,7 +3,7 @@ title: "Podcast 36: FOSDEM Recap"
 author: "Eduardo Bellido Bellido"
 slug: podcast-36
 date: 2018-02-14T23:45:00
-image: fosdem-2018.png
+image: fosdem-2018.jpg
 audio: edyo-36.mp3
 ---
 

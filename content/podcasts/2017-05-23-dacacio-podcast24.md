@@ -3,7 +3,7 @@ title: "Podcast 24: Especial WannaCry"
 author: "David Acacio"
 slug: podcast-episodio-24
 date: 2017-05-23T13:30:00
-image: wana_decrypt0r.png
+image: wana_decrypt0r.jpg
 audio: edyo-24.mp3
 aliases:
   - /posts/podcast-episodio-24.html
