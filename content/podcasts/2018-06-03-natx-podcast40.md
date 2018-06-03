@@ -14,8 +14,8 @@ En el episodio 40 del podcast hacemos un repaso de los forks nacidos de Bitcoin 
 Enlaces comentados: 
 
 - [Cuenta de Twitter de Bitcoin](https://twitter.com/bitcoin)
-- [Lightning Network](https://es.wikipedia.org/wiki/Lightning)
-- [(P2P) Blockstream](https://blockstream.com/)
+- [Lightning Network](https://es.wikipedia.org/wiki/Lightning_(P2P))
+- [Blockstream](https://blockstream.com/)
 - [Roger Ver](https://es.wikipedia.org/wiki/Roger_Ver)
 - [Petro](https://es.wikipedia.org/wiki/Petro_(criptomoneda))
 - [Crypto kitties](https://www.cryptokitties.co/)
