@@ -20,5 +20,5 @@ Enlaces comentados:
 - [Petro](https://es.wikipedia.org/wiki/Petro_(criptomoneda))
 - [Crypto kitties](https://www.cryptokitties.co/)
 - [Smart Contracts](https://es.wikipedia.org/wiki/Contrato_inteligente)
-- [Oraculos](https://blockchainhub.net/blockchain-oracles/)
+- [Oráculos](https://blockchainhub.net/blockchain-oracles/)
 
