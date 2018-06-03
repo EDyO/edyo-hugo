@@ -1,5 +1,5 @@
 ---
-title: "Podcast 40: Las querras de Bitcoin"
+title: "Podcast 40: Las guerras de Bitcoin"
 author: "Ignasi Fosch"
 slug: podcast-40
 date: 2018-06-03T12:35:00
