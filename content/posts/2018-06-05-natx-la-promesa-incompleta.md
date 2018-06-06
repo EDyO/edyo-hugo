@@ -2,7 +2,7 @@
 title: "La promesa incompleta"
 author: Ignasi Fosch
 slug: "la-promesa-incompleta"
-date: 2018-03-05T22:00:00
+date: 2018-06-05T22:00:00
 ---
 
 <img src='/images/noops.jpg' alt='noops' class='align-left height='200' width='200'/>
@@ -32,7 +32,7 @@ Esto fue la génesis de un debate que aún dura hoy, pero veamos un poco cómo e
 
 ## La primera fase de NoOps
 
-Como suele pasar, Internet hirvió con discusiones sobre el tema, y gurús de aquí y allá salían defendiendo unas u otras opiniones.
+Como suele pasar, Internet hirvió con discusiones sobre el tema, y gurúes de aquí y allá salían defendiendo unas u otras opiniones.
 Ni siquiera había dos bandos.
 
 Incluso, algunos eran citados hablando del tema, a menudo, fuera de contexto. Por ejemplo, un año después, [Adrian Cockcroft](https://twitter.com/adrianco?lang=es) [publicó un artículo](http://perfcap.blogspot.com/2012/03/ops-devops-and-noops-at-netflix.html) en su blog aclarando que Netflix sí que seguía teniendo un equipo de operaciones, sólo que el funcionamiento había evolucionado con el pasar del tiempo.
