@@ -3,6 +3,7 @@ title: "La promesa incompleta"
 author: Ignasi Fosch
 slug: "la-promesa-incompleta"
 date: 2018-06-05T22:00:00
+image: rocket-launch.jpg
 ---
 
 <img src='/images/noops.jpg' alt='noops' class='align-left height='200' width='200'/>
