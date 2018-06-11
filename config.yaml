@@ -65,29 +65,31 @@ menu:
       URL: "/posts.html"
       Identifier: "posts"
       Weight: 20
+    - Name: "Suscríbete"
+      URL: "/suscribete.html"
+      Identifier: "subscription"
+      Weight: 30
+    - Name: "Ayúdanos"
+      URL: "/ayudanos.html"
+      Identifier: "help-us"
+      Weight: 40
     - Name: "Equipo"
       URL: "/equipo.html"
       Identifier: "team"
-      Weight: 30
+      Weight: 50
     - Name: "Código de conducta"
       URL: "/codigo-conducta.html"
       Identifier: "coc"
-      Weight: 50
+      Weight: 60
 
-  subscription:
-    - Name: "Podcast RSS"
-      URL: "https://feedpress.me/edyo"
-      Identifier: "feed-rss-podcasts"
+  frontpage:
+    - Name: "Suscríbete"
+      URL: "/suscribete.html"
+      Pre: <i class="fas fa-rss"></i>
+      Identifier: "subscription"
       Weight: 10
-    - Name: "Podcast en iVoox"
-      URL: "https://www.ivoox.com/podcast-entre-dev-y-ops-podcast_sq_f1112910_1.html"
-      Identifier: "ivoox"
+    - Name: "Ayúdanos"
+      URL: "/ayudanos.html"
+      Pre: <i class="fas fa-donate"></i>
+      Identifier: "help-us"
       Weight: 20
-    - Name: "Podcast en iTunes"
-      URL: "https://itunes.apple.com/es/podcast/entredevyops-podcast/id866788492"
-      Identifier: "itunes"
-      Weight: 30
-    - Name: "Web RSS"
-      URL: "/rss.xml"
-      Identifier: "feed-rss"
-      Weight: 40
