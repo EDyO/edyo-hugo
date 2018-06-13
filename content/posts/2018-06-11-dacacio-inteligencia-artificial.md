@@ -2,7 +2,7 @@
 title: "Inteligencia Artificial (IA)"
 author: David Acacio
 slug: "inteligencia-artificial"
-date: 2018-06-011T22:00:00
+date: 2018-06-13T22:00:00
 image: ia.jpeg
 ---
 
