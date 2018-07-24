@@ -26,9 +26,9 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="https://twitter.com/ifosch"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/natx"><i class="fa fa-github"></i></a>
-        <a href="https://linkedin.com/in/ifosch"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/ifosch"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/natx"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/ifosch"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </div>
@@ -48,10 +48,10 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="https://jare.es"><i class="fa fa-globe"></i></a>
-        <a href="https://twitter.com/xarellano"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/jare"><i class="fa fa-github"></i></a>
-        <a href="https://linkedin.com/in/xarellano"><i class="fa fa-linkedin"></i></a>
+        <a href="https://jare.es"><i class="fas fa-globe"></i></a>
+        <a href="https://twitter.com/xarellano"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/jare"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/xarellano"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </div>
@@ -73,10 +73,10 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="http://edubxb.net"><i class="fa fa-globe"></i></a>
-        <a href="https://twitter.com/edu2b"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/edubxb"><i class="fa fa-github"></i></a>
-        <a href="https://linkedin.com/in/edubxb"><i class="fa fa-linkedin"></i></a>
+        <a href="http://edubxb.net"><i class="fas fa-globe"></i></a>
+        <a href="https://twitter.com/edu2b"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/edubxb"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/edubxb"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </div>
@@ -98,10 +98,10 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="http://acacio.cat"><i class="fa fa-globe"></i></a>
-        <a href="https://twitter.com/david_acacio"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/dacacioa"><i class="fa fa-github"></i></a>
-        <a href="https://linkedin.com/in/davidacacio"><i class="fa fa-linkedin"></i></a>
+        <a href="http://acacio.cat"><i class="fas fa-globe"></i></a>
+        <a href="https://twitter.com/david_acacio"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/dacacioa"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/davidacacio"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </div>
@@ -122,9 +122,9 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="https://twitter.com/dareste"><i class="fa fa-twitter"></i></a>
-        <a href="https://github.com/dareste"><i class="fa fa-github"></i></a>
-        <a href="https://linkedin.com/in/dareste"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/dareste"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/dareste"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/dareste"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 </div>
