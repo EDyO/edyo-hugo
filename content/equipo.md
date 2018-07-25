@@ -8,14 +8,14 @@ aliases:
 
 Tras el auge del movimiento <i>DevOps</i>, creemos que compartir información es el
 mejor camino para estrechar la distancia entre los equipos de desarrollo y de
-operaciones. Con este objetivo, nace **Entre Dev Y Ops**, donde compartiremos
+operaciones. Con este objetivo, nace **Entre Dev y Ops**, donde compartiremos
 información relativa a ambos mundos en castellano.
 
 <div class="author-card">
   <div class="card">
     <div class="first-info">
       <img alt="Ignasi Fosch"
-      src="http://www.gravatar.com/avatar/e7f565896cf71da9e729238d331291c0?size=250"/>
+           src="https://www.gravatar.com/avatar/e7f565896cf71da9e729238d331291c0?size=250"/>
       <div class="profile">
         <h1>Ignasi Fosch</h1>
         <h3>Ingeniero de Sistemas</h3>
@@ -26,6 +26,7 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
+        <a href="https://natx.cat"><i class="fas fa-globe"></i></a>
         <a href="https://twitter.com/ifosch"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/natx"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/ifosch"><i class="fab fa-linkedin"></i></a>
@@ -37,7 +38,7 @@ información relativa a ambos mundos en castellano.
   <div class="card">
     <div class="first-info">
       <img alt="Javier Arellano"
-  src="http://www.gravatar.com/avatar/648f1abd185afa17ed1aed56bfc5e6df?size=250"/>
+           src="https://www.gravatar.com/avatar/648f1abd185afa17ed1aed56bfc5e6df?size=250"/>
       <div class="profile">
         <h1>Javier Arellano</h1>
         <h3>Ingeniero de Sistemas</h3>
@@ -60,7 +61,7 @@ información relativa a ambos mundos en castellano.
   <div class="card">
     <div class="first-info">
       <img alt="Eduardo Bellido Bellido"
-      src="http://www.gravatar.com/avatar/20c481cbb757159a75570c3e80b4314e?size=250"/>
+           src="https://www.gravatar.com/avatar/20c481cbb757159a75570c3e80b4314e?size=250"/>
       <div class="profile">
         <h1>Eduardo Bellido Bellido</h1>
         <h3>Ingeniero de Sistemas</h3>
@@ -73,7 +74,7 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="http://edubxb.net"><i class="fas fa-globe"></i></a>
+        <a href="https://edubxb.net"><i class="fas fa-globe"></i></a>
         <a href="https://twitter.com/edu2b"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/edubxb"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/edubxb"><i class="fab fa-linkedin"></i></a>
@@ -85,7 +86,7 @@ información relativa a ambos mundos en castellano.
   <div class="card">
     <div class="first-info">
     <img alt="David Acacio"
-    src="https://www.gravatar.com/avatar/a4906de70aaed95d209697943bcdf8a2?size=250"/>
+         src="https://www.gravatar.com/avatar/a4906de70aaed95d209697943bcdf8a2?size=250"/>
       <div class="profile">
         <h1>David Acacio</h1>
         <h3>IT Manager</h3>
@@ -98,7 +99,7 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="http://acacio.cat"><i class="fas fa-globe"></i></a>
+        <a href="https://acacio.cat"><i class="fas fa-globe"></i></a>
         <a href="https://twitter.com/david_acacio"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/dacacioa"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/davidacacio"><i class="fab fa-linkedin"></i></a>
@@ -110,7 +111,7 @@ información relativa a ambos mundos en castellano.
   <div class="card">
     <div class="first-info">
       <img alt="Daniel Aresté"
-      src="http://www.gravatar.com/avatar/8c586484c77e7bfee00946aeec35b66f?size=250"/>
+           src="https://www.gravatar.com/avatar/8c586484c77e7bfee00946aeec35b66f?size=250"/>
       <div class="profile">
         <h1>Daniel Aresté</h1>
         <h3>Ingeniero de Redes</h3>
