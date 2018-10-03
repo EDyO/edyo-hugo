@@ -16,6 +16,10 @@ Si usas iTunes, también nos encontrarás allí:
 
 [Entre Dev y Ops en iTunes](https://itunes.apple.com/es/podcast/entredevyops-podcast/id866788492)
 
+Otra opción que te ofrecemos es escucharnos en Spotify:
+
+[Entre Dev y Ops en Spotify](https://open.spotify.com/show/2DVB2I5o2KY6VyVxPRbrLX?si=YS5VrMvFSQGC5xLx2XtdxA)
+
 Por último, tienes disponible el feed RSS de nuestra web que contiene tanto los episodios del podcast como los artículos:
 
 [Feed RSS Entre Dev y Ops](/rss.xml)
