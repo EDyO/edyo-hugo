@@ -1,0 +1,52 @@
+prose:
+  rooturl: 'content'
+  media: 'static/images'
+  metadata:
+    content:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+          value: "Post title"
+      - name: "author"
+        field:
+          element: "textarea"
+          label: "author"
+          value: CURRENT_USER
+      - name: "slug"
+        field:
+          element: "text"
+          label: "slug"
+          value: "Url for the post"
+      - name: "date"
+        field:
+          element: "text"
+          label: "date"
+          value: CURRENT_DATETIME
+      - name: "image"
+        field:
+          element: "text"
+          label: "image"
+          value: "Card image used in homepage, relative to /images/, e.g. an_image.png"
+      - name: "audio"
+        field:
+          element: "text"
+          label: "audio"
+          value: "Audio file of the Podast episode, e.f. podcast-99.png"
+    static:
+      - name: "url"
+        field:
+          element: "text"
+          label: "Url"
+          value: ""
+  users:
+    - login: "dacacioa"
+      user: "David Acacio"
+    - login: "dareste"
+      user: "Daniel Aresté"
+    - login: "edubxb"
+      user: "Eduardo Bellido Bellido"
+    - login: "jare"
+      user: "Javier Arellano"
+    - login: "natx"
+      user: "Ignasi Fosch"
