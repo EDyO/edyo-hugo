@@ -2,7 +2,7 @@ prose:
   rooturl: 'content'
   media: 'static/images'
   metadata:
-    content/posts:
+    content:
       - name: "title"
         field:
           element: "text"
@@ -28,6 +28,7 @@ prose:
           element: "text"
           label: "image"
           value: "Card image used in homepage, relative to /images/, e.g. an_image.png"
+    content/podcasts:
       - name: "audio"
         field:
           element: "text"
