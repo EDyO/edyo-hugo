@@ -7,6 +7,22 @@ prose:
         field:
           element: "text"
           label: "title"
+          value: "Page title"
+      - name: "slug"
+        field:
+          element: "text"
+          label: "slug"
+          value: "Page slug"
+      - name: "type"
+        field:
+          element: "hidden"
+          label: "type"
+          value: "page"
+    content/posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
           value: "Post title"
       - name: "author"
         field:
@@ -17,7 +33,7 @@ prose:
         field:
           element: "text"
           label: "slug"
-          value: "Url for the post"
+          value: "Post slug"
       - name: "date"
         field:
           element: "text"
@@ -27,19 +43,38 @@ prose:
         field:
           element: "text"
           label: "image"
-          value: "Card image used in homepage, relative to /images/, e.g. an_image.png"
+          value: "Card image used in homepage, relative to /static/images/, e.g. an_image.png"
     content/podcasts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+          value: "Podcast title"
+      - name: "author"
+        field:
+          element: "textarea"
+          label: "author"
+          value: CURRENT_USER
+      - name: "slug"
+        field:
+          element: "text"
+          label: "slug"
+          value: "Podcast post slug"
+      - name: "date"
+        field:
+          element: "text"
+          label: "date"
+          value: CURRENT_DATETIME
+      - name: "image"
+        field:
+          element: "text"
+          label: "image"
+          value: "Card image used in homepage, relative to /static/images/, e.g. an_image.png"
       - name: "audio"
         field:
           element: "text"
           label: "audio"
-          value: "Audio file of the Podast episode, e.f. podcast-99.png"
-    static:
-      - name: "url"
-        field:
-          element: "text"
-          label: "Url"
-          value: ""
+          value: "Audio file of the Podcast episode, e.g. podcast-99.png"
   users:
     - login: "dacacioa"
       user: "David Acacio"
