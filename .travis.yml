@@ -1,6 +1,10 @@
 language: go
 sudo: required
 
+branches:
+  only:
+    master
+
 go:
     - 1.9
 
