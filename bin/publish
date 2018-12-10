@@ -10,5 +10,4 @@ if [ "$(whoami)" == "travis" -a "${TRAVIS_PULL_REQUEST}" == false ]; then
   git push
 else
   echo "This script is to be run through CI"
-  exit 1
 fi
