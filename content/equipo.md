@@ -26,9 +26,9 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="https://natx.cat"><i class="fas fa-globe"></i></a>
+        <a href="https://www.natx.cat"><i class="fas fa-globe"></i></a>
         <a href="https://twitter.com/ifosch"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/natx"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/ifosch"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/ifosch"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
