@@ -14,9 +14,9 @@ En el episodio 46 del podcast de https://www.entredevyops.es/ nos juntamos en pe
 Enlaces comentados:
 
 * [2018: The Biggest Year for Open Source Software Ever!](https://medium.com/memory-leak/2018-the-biggest-year-for-open-source-software-ever-68d01b4751a7)
-* [Chaoss](https://github.com/chaoss/metrics/blob/master/README.md) 
-* [Fosdem](https://fosdem.org) 
+* [Chaoss](https://github.com/chaoss/metrics/blob/master/README.md)
+* [Fosdem](https://fosdem.org)
 * [GitHub](https://github.com)
-* [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.html) 
-* [Fossa](https://fossa.com/) 
+* [GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+* [Fossa](https://fossa.com/)
 * [API Docs](https://api-docs.io/)
