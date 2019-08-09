@@ -99,11 +99,11 @@ información relativa a ambos mundos en castellano.
       </div>
     </div>
     <div class="social-profiles">
-        <a href="https://acacio.cat"><i class="fas fa-globe"></i></a>
+        <a href="https://www.davidacacio.com"><i class="fas fa-globe"></i></a>
         <a href="https://twitter.com/david_acacio"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/dacacioa"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/davidacacio"><i class="fab fa-linkedin"></i></a>
-    </div>
+    </div>https://www.davidacacio.com
   </div>
 </div>
 
