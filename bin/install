@@ -1,4 +1,4 @@
 sudo apt-get update
-sudo apt-get -y install python-docutils
+sudo apt-get -y install python-docutils python-pygments
 wget -O hugo.tgz https://github.com/gohugoio/hugo/releases/download/v0.42.1/hugo_0.42.1_Linux-64bit.tar.gz
 tar xzf hugo.tgz
