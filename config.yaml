@@ -53,7 +53,7 @@ params:
   telegram: "entredevyops"
 
   podcast:
-    audioBaseUrl: "http://podcast.edyo.es/podcast/"
+    audioBaseUrl: "https://podcast.edyo.es/podcast/"
 
 menu:
   main:
