@@ -12,10 +12,10 @@ A continuación detallamos el código de conducta dirigido a la comunidad del po
 4. El uso de lenguaje soez no está permitido, así como insultos y faltas de respeto dirigidas a otras personas.
 5. Está permitido el uso de nuestros canales de comunicación para compartir ofertas de trabajo con la comunidad (preferiblemente Telegram), siempre y cuando dicha cumpla con los siguientes requisitos:
    1. Esté relacionada con la temática del podcast.
-   2. Contenga una clara descripción de la posición, requisitos y beneficios.
-   3. Esté indicado el rango salarial.
-   4. Disponga de datos de contacto.
-   5. El contacto ha de ser directo con la compañía final, no está permitido ofertas de _recruiters_ ni _headhunters_.
+   2. Contenga una clara descripción de la posición y sus requisitos.
+   3. Estén indicados tanto el rango salarial como el resto de posibles beneficios.
+   4. Se indique la empresa final y se faciliten datos de contacto.
+   5. La oferta sea publicada por un mientro partícipe de la comunidad. Es decir, no se permite el uso de los canales de comunicación a _recruiters_ o _headhunters_ con fines exclusivos de captación de talento.
 
 Los componentes de **EDyO** se guardan el derecho de bloquear y/o expulsar a cualquier persona que no cumpla con las normas anteriormente expuestas.
 
