@@ -15,7 +15,7 @@ A continuación detallamos el código de conducta dirigido a la comunidad del po
    2. Contenga una clara descripción de la posición y sus requisitos.
    3. Estén indicados tanto el rango salarial como el resto de posibles beneficios.
    4. Se indique la empresa final y se faciliten datos de contacto.
-   5. La oferta sea publicada por un mientro partícipe de la comunidad. Es decir, no se permite el uso de los canales de comunicación a _recruiters_ o _headhunters_ con fines exclusivos de captación de talento.
+   5. La oferta sea publicada por un miembro partícipe de la comunidad. Es decir, no se permite el uso de los canales de comunicación a _recruiters_ o _headhunters_ con fines exclusivos de captación de talento.
 
 Los componentes de **EDyO** se guardan el derecho de bloquear y/o expulsar a cualquier persona que no cumpla con las normas anteriormente expuestas.
 
