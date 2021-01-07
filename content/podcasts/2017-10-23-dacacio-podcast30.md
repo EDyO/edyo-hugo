@@ -40,5 +40,4 @@ Enlaces comentados:
  * [Una al día](http://unaaldia.hispasec.com/)
  * [David Bonilla](http://bonillaware.us2.list-manage.com/)
  * [DevOps Weekly](http://www.devopsweekly.com/)
- * [Coursera](https://www.coursera.org/)
  * [Packtpub](https://www.packtpub.com/packt/offers/free-learning)
