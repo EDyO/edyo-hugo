@@ -1,0 +1,27 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.42.1'
+      - name: Clone theme
+        run: bin/setup_theme
+      - name: Build
+        run: hugo -F
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          external_repository: EDyO/edyo.github.io
+          publish_branch: master
+          publish_dir: ./public
