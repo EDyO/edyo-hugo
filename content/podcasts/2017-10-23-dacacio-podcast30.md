@@ -38,6 +38,6 @@ Enlaces comentados:
  * [Think wasabi](http://thinkwasabi.com/)
  * [Desarrollo profesional](https://pantaloni.es/category/podcast/)
  * [Una al día](http://unaaldia.hispasec.com/)
- * [David Bonilla](http://bonillaware.us2.list-manage.com/)
+ * [David Bonilla](https://www.bonilista.com/)
  * [DevOps Weekly](http://www.devopsweekly.com/)
  * [Packtpub](https://www.packtpub.com/packt/offers/free-learning)
