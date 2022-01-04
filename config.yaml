@@ -27,6 +27,11 @@ outputFormats:
     mediatype: "application/rss"
     baseName: "rss"
 
+security:
+  exec:
+    allow:
+      - ^rst2html$
+
 params:
   mainSections: ["posts", "podcasts"]
 
