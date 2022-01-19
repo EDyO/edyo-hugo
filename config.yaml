@@ -32,6 +32,11 @@ security:
     allow:
       - ^rst2html$
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   mainSections: ["posts", "podcasts"]
 
