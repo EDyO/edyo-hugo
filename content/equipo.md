@@ -107,25 +107,6 @@ información relativa a ambos mundos en castellano.
   </div>
 </div>
 
-<div class="author-card">
-  <div class="card">
-    <div class="first-info">
-      <img alt="Daniel Aresté"
-           src="https://www.gravatar.com/avatar/8c586484c77e7bfee00946aeec35b66f?size=250"/>
-      <div class="profile">
-        <h1>Daniel Aresté</h1>
-        <h3>Ingeniero de Redes</h3>
-        <p class="bio"> Me acerqué al <i><b>networking</b></i> hace más de diez años y
-        quedé <i>“enredado”</i> haciendo de ello mi profesión. Ahora, sigo de
-        cerca las últimas tendencias de virtualización y automatización en
-        redes. Hay otras dos cosas que no me pierdo: echar una buena partida de
-        mus y pasar el día en la roca escalando. </p>
-      </div>
-    </div>
-    <div class="social-profiles">
-        <a href="https://twitter.com/dareste"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/dareste"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/dareste"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </div>
-</div>
+Antiguos miembros del equipo:
+
+  - Daniel Aresté (<a href="https://twitter.com/dareste">Twitter</a>, <a href="https://github.com/dareste">GitHub</a>, <a href="https://linkedin.com/in/dareste">LinkedIn</a>)
