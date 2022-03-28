@@ -20,9 +20,9 @@ información relativa a ambos mundos en castellano.
         <h1>Ignasi Fosch</h1>
         <h3>Ingeniero de Sistemas</h3>
         <p class="bio">Interesado en la informática, en general, desde muy joven,
-    estudié para programador, pero acabé trabajando como administrador. Siempre
-    he pensado que un técnico mejora cuanto más conoce de la tecnología que
-    usa.</p>
+        estudié para programador, pero acabé trabajando como administrador. Siempre
+        he pensado que un técnico mejora cuanto más conoce de la tecnología que
+        usa.</p>
       </div>
     </div>
     <div class="social-profiles">
@@ -43,9 +43,9 @@ información relativa a ambos mundos en castellano.
         <h1>Javier Arellano</h1>
         <h3>Ingeniero de Sistemas</h3>
         <p class="bio">Entusiasta de la tecnología vivo arrendando mis
-  servicios en las grandes empresas. Bibliófilo empedernido, coleccionista
-  digital y amante de la música. Con muchos proyectos empezados y muy poco
-  tiempo.</p>
+        servicios en las grandes empresas. Bibliófilo empedernido, coleccionista
+        digital y amante de la música. Con muchos proyectos empezados y muy poco
+        tiempo.</p>
       </div>
     </div>
     <div class="social-profiles">
@@ -89,7 +89,7 @@ información relativa a ambos mundos en castellano.
          src="https://www.gravatar.com/avatar/a4906de70aaed95d209697943bcdf8a2?size=250"/>
       <div class="profile">
         <h1>David Acacio</h1>
-        <h3>IT Manager</h3>
+        <h3>Cloud Architect</h3>
         <p class="bio">Con 7 años me regalaron un Spectrum 48k y desde entonces
         ando cacharreando. Técnico de Sistemas reconvertido (forzosamente) a
         <i>manager</i>, he emprendido varios negocios con mayor o menor éxito,
@@ -103,7 +103,7 @@ información relativa a ambos mundos en castellano.
         <a href="https://twitter.com/david_acacio"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/dacacioa"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/davidacacio"><i class="fab fa-linkedin"></i></a>
-    </div>https://www.davidacacio.com
+    </div>
   </div>
 </div>
 
