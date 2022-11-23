@@ -58,6 +58,7 @@ params:
 
   disqus: "edyo"
   twitter: "entredevyops"
+  mastodon: "https://mastodon.online/@entredevyops"
   linkedin: "company/entredevyops"
   github: "edyo"
   telegram: "entredevyops"
