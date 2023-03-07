@@ -40,8 +40,8 @@ markup:
 params:
   mainSections: ["posts", "podcasts"]
 
-  Description: "El podcast en el que hablamos sobre desarrollo de aplicaciones, operaciones de sistemas informáticos y todo lo relacionado con la filosofía DevOps"
-  Subtitle: "El podcast en el que hablamos sobre desarrollo de aplicaciones, operaciones de sistemas informáticos y todo lo relacionado con la filosofía DevOps"
+  Description: "El podcast donde no solo hablamos sobre desarrollo de aplicaciones, operaciones de sistemas informáticos y todo lo relacionado con la filosofía DevOps"
+  Subtitle: "El podcast donde no solo hablamos sobre desarrollo de aplicaciones, operaciones de sistemas informáticos y todo lo relacionado con la filosofía DevOps"
 
   cover: "/images/cover.jpg"
   logo: "/images/edyo-logo.png"
