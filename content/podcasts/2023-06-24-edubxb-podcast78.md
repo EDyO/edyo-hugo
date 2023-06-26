@@ -7,7 +7,7 @@ image: gde.png
 audio: edyo-78.mp3
 ---
 
-En el episodio 78 del podcast de Entre Dev y Ops hablaremos sobre con Laura Morillo-Velarde Rodríguez,
+En el episodio 78 del podcast de Entre Dev y Ops hablaremos con Laura Morillo-Velarde Rodríguez,
 Google Developer Expert en Google Cloud Platform.
 
 <!--more-->
