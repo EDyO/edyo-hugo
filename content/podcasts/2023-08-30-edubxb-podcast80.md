@@ -1,5 +1,5 @@
 ---
-title: "Podcast 80: "
+title: "Podcast 80: Hashicorp adopta la BUSL 1.1"
 author: "Eduardo Bellido Bellido"
 slug: podcast-80
 date: 2023-08-30T14:35:00
