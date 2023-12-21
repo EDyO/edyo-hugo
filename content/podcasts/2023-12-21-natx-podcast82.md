@@ -1,5 +1,5 @@
 ---
-title: "Podcast 82 -  "
+title: "Podcast 82 - Burnout, cansado o quemado"
 author: "Ignasi Fosch"
 slug: podcast-82
 date: 2023-12-21T06:15:00
