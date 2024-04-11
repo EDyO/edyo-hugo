@@ -115,14 +115,12 @@ información relativa a ambos mundos en castellano.
       <div class="profile">
         <h1>David Poblador i Garcia</h1>
         <h3>Tecnólogo</h3>
-        <p class="bio">Más de 25 años trabajando en tecnología, y convencido de
-        que gran parte de los problemas que creemos técnicos se pueden arreglar
-        sin escribir una sola línea de código. Apasionado por la automatización
-        y pragmático en mi enfoque, siempre intento evitar reinventar la rueda,
-        sin perder el entusiasmo por probar todos los juguetes que nos brinda
-        nuestro sector. Se rumorea que se me da bien hacer crecer equipos de
-        infraestructura, pero continúo creyendo que nada puede superar un equipo
-        compacto y bien engrasado.</p>
+        <p class="bio">Más de 25 años en tecnología, y convencido de que gran
+        parte de los problemas que creemos técnicos se pueden arreglar sin
+        escribir código. Intento evitar reinventar la rueda, sin perder el gusto
+        por probar todos los juguetes que nos brinda nuestro sector. Se rumorea
+        que se me da bien hacer crecer equipos de infraestructura, pero continúo
+        creyendo que nada puede superar un equipo compacto y engrasado.</p>
       </div>
     </div>
     <div class="social-profiles">
