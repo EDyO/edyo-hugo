@@ -91,15 +91,14 @@ información relativa a ambos mundos en castellano.
         <h1>David Acacio</h1>
         <h3>Cloud Architect</h3>
         <p class="bio">Con 7 años me regalaron un Spectrum 48k y desde entonces
-        ando cacharreando. Técnico de Sistemas reconvertido (forzosamente) a
-        <i>manager</i>, he emprendido varios negocios con mayor o menor éxito,
+        ando cacharreando. Técnico de Sistemas reconvertido a
+        <i>cloud architect</i>, he emprendido varios negocios con mayor o menor éxito,
         pero siempre con ilusión y pasión. Apasionado del <i>Open Source</i>, los
         sistemas Unix/Linux, metodologías ágiles y <i>DevOps</i>. Siempre en constante
         reciclaje.</p>
       </div>
     </div>
     <div class="social-profiles">
-        <a href="https://www.davidacacio.com"><i class="fas fa-globe"></i></a>
         <a href="https://twitter.com/david_acacio"><i class="fab fa-twitter"></i></a>
         <a href="https://github.com/dacacioa"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/davidacacio"><i class="fab fa-linkedin"></i></a>
