@@ -20,8 +20,8 @@ Enlaces comentados:
 - [Programa recuperado de Sábado Chip](https://www.youtube.com/watch?v=bLOTDm4ZuHg)
 - [Atari](https://en.wikipedia.org/wiki/Atari)
 - [Zafiro](https://www.devuego.es/bd/festudio/zafiro-software)
-- [DROSoft](https://en.wikipedia.org/wiki/DROsoft=
-- [PDS](https://www.cpcwiki.eu/index.php/PDS_development_system
+- [DROSoft](https://en.wikipedia.org/wiki/DROsoft=)
+- [PDS](https://www.cpcwiki.eu/index.php/PDS_development_system)
 - [Sideral War](https://zxart.ee/spa/software/games/arcade/shooters/run-n-gun/classic-run-n-gun/sideral-war/)
 - [BlodBloody Paws](https://worldofspectrum.org/archive/software/games/bloody-paws-gll-software-sa)
 - [Bloody Paws vídeo](https://www.youtube.com/watch?v=efwTRAuj-jE)
