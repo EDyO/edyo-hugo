@@ -3,7 +3,7 @@ title: "Podcast 96: Fosdem 2025"
 author: "David Acacio"
 slug: podcast-96
 date: 2025-03-05T23:00:00
-image: fosdem-2025.jpg
+image: fosdem-2025.png
 audio: edyo-96.mp3
 ---
 
