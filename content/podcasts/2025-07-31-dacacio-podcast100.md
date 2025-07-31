@@ -3,7 +3,7 @@ title: "Podcast 100: Especial episodio 100"
 author: "David Acacio"
 slug: podcast-100
 date: 2025-07-31T20:00:00
-image: edyo100.png
+image: EDyO100.png
 audio: edyo-100.mp3
 ---
 
