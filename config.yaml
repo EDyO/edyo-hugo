@@ -7,10 +7,12 @@ defaultContentLanguage: "es"
 
 SectionPagesMenu: "Main"
 theme: "edyo"
-paginate: 6
 uglyurls: true
 pygmentsCodeFences: true
 pygmentsStyle: "vs"
+
+pagination:
+  pagerSize: 6 
 
 enableEmoji: true
 
