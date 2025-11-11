@@ -14,7 +14,7 @@ jobs:
       - name: Setup Hugo dependencies for our site
         run: sudo apt-get update && sudo apt-get -y install python3-docutils python3-pygments
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.91.2'
       - name: Clone theme
